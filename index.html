@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mobile Shop</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Jquery CDN  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap 5 CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- FontAwesome CDN  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__icons">
+      <div class="icon-list">
+        <i class="far fa-search icon-list__item"></i>
+        <i class="far fa-user-circle icon-list__item"></i>
+        <i class="fas fa-cart-plus icon-list__item"></i>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light header__navigation">
+      <div class="container-fluid nav__navbar-container">
+        <a class="navbar-brand nav__logo">
+          <img class="logo-image">
+        </a>
+        <div class="navbar-collapse nav__div ms-4">
+          <ul class="navbar-nav nav__list">
+            <li class="nav-item nav__list-item ms-10">
+              <a class="nav-link active-text nav__list-link heading-tertiary json-nav-1"></a>
+            </li>
+            <li class="nav-item  nav__list-item ms-10">
+              <a class="nav-link nav__list-link normal-text-1 heading-tertiary json-nav-2"></a>
+            </li>
+            <li class="nav-item  nav__list-item ms-10">
+              <a class="nav-link nav__list-link  normal-text-1 heading-tertiary json-nav-3"></a>
+            </li>
+            <li class="nav-item  nav__list-item ms-10">
+              <a class="nav-link nav__list-link  normal-text-1 heading-tertiary json-nav-4"></a>
+            </li>
+            <li class="nav-item  nav__list-item ms-10">
+              <a class="nav-link nav__list-link  normal-text-1 heading-tertiary json-nav-5"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="carousel">
+    <div id="carouselSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselSection" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselSection" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselSection" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselSection" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselSection" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block  w-100 carousel-image">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="carousel-caption--text heading-secondary active-text carousel-h3-json"></h3>
+            <h2 class=" carousel-caption--text heading-tertiary normal-text-1 carousel-h2-json"></h2>
+            <p class="normal-text-2 carousel-p-json"></p>
+            <button class="carousel-caption--button btn heading-tertiary carousel-button-json"></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block  w-100 carousel-image">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block  w-100 carousel-image">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block  w-100 carousel-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="phones">
+
+    <div class="popup-image" id="fullImgBox">
+      <img id="fullImg">
+      <p id="ImgDesc"></p>
+      <span onclick="closeFullImg()" class="normal-text-1 heading-tertiary popup-cancel pointer"><strong>X</strong></span>
+    </div>
+
+    <div class="phones-arrivals">
+
+      <div class="phones__text">
+        <h1 class="normal-text-2"> <span class="text-white arrival-white-heading-json"></span> ARRIVAL</h1>
+        <h2 class="text-white mt-35 arrival-description-json"></h2>
+      </div>
+
+      <div class="container-grid-arrival">
+        <div class="card">
+          <img class="arrival-image pointer phone1-json-arrival" onclick="openFullImg(this.src,this.alt)">
+          <h2 class="normal-text-2 phone-image-text phone1-json-arrival-desc"></h2>
+          <div class="card-body-features">
+            <img class="card-body-features-cart pointer json-cart">
+            <img class="card-body-features-whishlist pointer json-wishlist">
+          </div>
+        </div>
+        <div class="card">
+          <img class="arrival-image pointer phone2-json-arrival" onclick="openFullImg(this.src,this.alt)">
+          <h2 class="normal-text-2 phone-image-text phone2-json-arrival-desc"></h2>
+          <div class="card-body-features">
+            <img class="card-body-features-cart pointer json-cart">
+            <img class="card-body-features-whishlist pointer json-wishlist">
+          </div>
+        </div>
+        <div class="card">
+          <img class="arrival-image pointer phone3-json-arrival" onclick="openFullImg(this.src,this.alt)">
+          <h2 class="normal-text-2 phone-image-text phone3-json-arrival-desc"></h2>
+          <div class="card-body-features">
+            <img class="card-body-features-cart pointer json-cart">
+            <img class="card-body-features-whishlist pointer json-wishlist">
+          </div>
+        </div>
+        <div class="card">
+          <img class="arrival-image pointer phone4-json-arrival" onclick="openFullImg(this.src,this.alt)">
+          <div class="card-body-features">
+            <button class="card-body-features-button pointer text-white">Notify me</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="loadAll-popup">
+        <div class="load-all-display" id="loadAll">
+
+          <div class="image1">
+           <img class="img-fluid phone1" class="img-fluid" >
+           <h3 class="text1"></h3>
+          </div>
+          
+          <div class="image2">
+           <img  class="img-fluid phone2" >
+           <h3 class="text2"></h3>
+          </div>
+          <div class="image3">
+           <img class="img-fluid phone3" >
+           <h3 class="text3"></h3>
+          </div>
+          <div class="image4">
+           <img  class="img-fluid phone4" >
+           <h3 class="text4"></h3>
+          </div>
+          <h3 class="active-text heading-tertiary esc-info"></h3>
+          <div class="cancel">
+            <h1 onclick="closeLoadAllPhones()" class="normal-text-1 heading-tertiary pointer"><strong>X</strong></h1>
+          </div>
+         </div>
+      </div>
+     
+
+      <div class="load-all">
+        <h3 class="load-all-text pointer normal-text-2 load-all-json" onclick="loadAllPhones()"></h3>
+      </div>
+
+      
+
+    </div>
+
+    <div class="phones-sales">
+
+      <div class="phones__text">
+        <h1 class="normal-text-2"> <span class="text-white sales-white-heading-json"></span> SALES</h1>
+        <h2 class="text-white mt-35 sales-description-json"></h2>
+      </div>
+
+      <div class="container-grid">
+        <div class="card">
+          <div class="card-body">
+            <img class="card-body-image pointer phone1-json-sales" onclick="openFullImg(this.src,this.alt)">
+            <div class="card-body-text ">
+              <h2 class="normal-text-2 phone-image-text phone1-json-sales-desc"></h2>
+              <div class="card-body-features pointer">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="card-body-atc pointer">
+              <img class="atc-image ">
+              <p class="atc-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img class="card-body-image pointer phone2-json-sales" onclick="openFullImg(this.src,this.alt)">
+            <div class="card-body-text">
+              <h2 class="normal-text-2 phone-image-text phone2-json-sales-desc"></h2>
+              <div class="card-body-features pointer">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="card-body-atc pointer">
+              <img class="atc-image ">
+              <p class="atc-text"></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img class="card-body-image pointer phone3-json-sales" onclick="openFullImg(this.src,this.alt)">
+            <div class="card-body-text">
+              <h2 class="normal-text-2 phone-image-text phone3-json-sales-desc"></h2>
+              <div class="card-body-features pointer">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="card-body-atc pointer">
+              <img class="atc-image ">
+              <p class="atc-text "></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="phones-reviews">
+
+      <div class="phones__text">
+        <h1 class="normal-text-2"> <span class="text-white reviews-white-heading-json"></span> REVIEWS</h1>
+        <h2 class="text-white mt-35 reviews-description-json"></h2>
+      </div>
+
+      <div class="container-grid">
+        <div class="card">
+          <div class="card-body">
+            <img class="card-body-image pointer phone1-json-reviews" onclick="openFullImg(this.src,this.alt)">
+            <div class="card-body-text">
+              <p class="normal-text-2 phone-image-text underline json-reviews-desc"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img class="card-body-image pointer phone2-json-reviews" onclick="openFullImg(this.src,this.alt)">
+            <div class="card-body-text">
+              <p class="normal-text-2 phone-image-text underline json-reviews-desc"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img class="card-body-image pointer phone3-json-reviews" onclick="openFullImg(this.src,this.alt)">
+            <div class="card-body-text">
+              <p class="normal-text-2 phone-image-text underline json-reviews-desc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="phones-newsletter">
+      <p class="normal-text-2 newsletter-text "> <span class="active-text newsletter-heading me-2"></span>  Subscribe now to
+        get all
+        news and special
+        offers</p>
+
+      <div class="features">
+        <div class="email">
+          <img class="newsletter-email">
+          <p class="newsletter-email-text"> <em></em></p>
+        </div>
+
+        <button class="newsletter-button  text-white"></button>
+      </div>
+
+
+    </div>
+    <br>
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer-links pointer">
+      <ul class="link1">
+        <li class="normal-text-2 weight-700  link11"></li>
+        <li class="normal-text-2 weight-700  link12"></li>
+        <li class="normal-text-2 weight-700  link13"></li>
+      </ul>
+      <ul class="link2">
+        <li class="normal-text-2 weight-700  link14"></li>
+        <li class="normal-text-2 weight-700  link15"></li>
+        <li class="normal-text-2 weight-700  link16"></li>
+      </ul>
+      <ul class="link3">
+        <li class="normal-text-2 weight-700  link17"></li>
+        <li class="normal-text-2 weight-700  link18"></li>
+        <li class="normal-text-2 weight-700  link19"></li>
+      </ul>
+    </div>
+
+    <div class="footer-payments">
+      <p class="active-text payment-text"></p>
+
+      <img class="payment-options-image">
+
+    </div>
+
+  </footer>
+
+  <script src="./code.js" async defer></script>
+</body>
+
+</html>

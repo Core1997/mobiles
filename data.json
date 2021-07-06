@@ -1,0 +1,129 @@
+{
+    "navigation":{
+        "nav-item1":"Home",
+        "nav-item2":"Mobiles",
+        "nav-item3":"Hot Deals",
+        "nav-item4":"About",
+        "nav-item5":"Contact",
+        "logo-alt-image":"Mobile Shop Logo",
+        "nav-img-path":"./images/logo.png"
+    },
+
+    "carousel":{
+        "carousel-img-path":"./images/carosuel.png",
+        "carousel-image-alt":"Carousel Mobile Image",
+        "carousel-H3Title":"Moto G",
+        "carousel-H2Desc":"Next Gen Mobile",
+        "carousel-PDesc":"The latest Moto X series phone, the Moto X4, has been launched exclusively.",
+        "carousel-Button":"Order now"
+    },
+
+    "phonesArrivals":{
+        "whiteHeading":"NEW",
+        "arrivalDescription":"Mobile phones from the top brands are available at the most competetive prices",
+        "phone1":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"IPhone",
+            "desc":"IPhone"
+        },
+        "phone2":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"Moto G",
+            "desc":"Moto G"
+        },
+        "phone3":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"Moto G X",
+            "desc":"Moto G X"
+        },
+        "phone4":{
+            "img-Path":"./images/mobile 2.png",
+            "img-Alt":"Samsung",
+            "desc":"Samsung"
+        },
+        "loadAllText":"Load All",
+        "cart":{
+            "img":"./images/cart.png",
+            "alt":"Cart Image"
+        },
+        "wishlist":{
+            "img":"./images/whishlist.png",
+            "alt":"Wishlist Image"
+        }
+    },
+
+    "phonesSales":{
+        "whiteHeading":"BEST",
+        "SalesDescription":"Find out best sellers collection",
+        "salesPhone1":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"iPhone 6S",
+            "desc":"iPhone 6S"
+        },
+        "salesPhone2":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"Nokia",
+            "desc":"Nokia"
+        },
+        "salesPhone3":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"Nokia",
+            "desc":"Nokia"
+        },
+        "atc":{
+            "text":"Add to cart",
+            "img":"./images/cart.png",
+            "imgAlt":"Cart Image"
+        }
+    },
+
+    "userReviews":{
+        "whiteHeading":"USER",
+        "SalesDescription":"Find out best sellers collection",
+        "reviewPhone1":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"iPhone 6S"
+        },
+        "reviewPhone2":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"Nokia"
+        },
+        "reviewPhone3":{
+            "img-Path":"./images/mobile1.png",
+            "img-Alt":"Nokia"
+        },
+        "desc":"Very good performance and good look and feel with stylish look"
+    },
+
+    "newsletter":{
+        "heading":"NEWSLETTER",
+        "email":{
+            "img":"./images/email.png",
+            "alt":"Email Image",
+            "text":"type your email here"
+        },
+        "buttonText":"Subscribe"
+    },
+
+    "footer":{
+        "links":{
+            "link1":"About Us",
+            "link2":"Contact Us",
+            "link3":"Customer Support",
+            "link4":"Subscribe",
+            "link5":"Terms and Conditions",
+            "link6":"Privacy Policy",
+            "link7":"Subscribe",
+            "link8":"Terms and Conditions",
+            "link9":"Privacy Policy"
+        },
+        "payment":{
+            "text":"We support all these Payment Methods",
+            "img":"./images/paymenticons.png",
+            "alt":"Payment Icon Image"
+        }
+    },
+    "esc-key-text":"Press ESC key to exit!"
+
+   
+}

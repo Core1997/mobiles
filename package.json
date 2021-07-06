@@ -1,0 +1,14 @@
+{
+  "name": "mobileapp",
+  "version": "1.0.0",
+  "description": "Responsive Mobile App",
+  "main": "code.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
